@@ -7,5 +7,66 @@
   padding: 0;
 }
 body{
-  @apply bg-grey-2;
+  @apply bg-grey-2 overflow-x-hidden;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style:normal;
+  letter-spacing: 1px;
+}
+
+
+.dosis-200 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.dosis-400 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+.dosis-800 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#spot{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  opacity: 0.5;
+  @apply bg-teal rounded-full;
+  background-blend-mode:multiply;
+  visibility: hidden;
+}
+
+.smooth{
+  transition: all .4s  ease-in-out;
+}
+
+#circle{
+  position: absolute;
+  right:30%;
+  top:15%;
+  width:10px;
+  height: 10px;
+  @apply bg-teal rounded-full animate-bounce ;
+  transition: visibility .2s  ease-in;
+}
+.customRelative{
+  position: relative;
+}
+
+.addInvert:hover > img{
+ filter: invert(100%);
 }
