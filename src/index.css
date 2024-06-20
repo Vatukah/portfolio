@@ -13,6 +13,7 @@ body{
   font-weight:400;
   font-style:normal;
   letter-spacing: 1px;
+  
 }
 
 
@@ -69,4 +70,25 @@ body{
 
 .addInvert:hover > img{
  filter: invert(100%);
+}
+#skillBox:nth-child(even){
+  @apply delay-75;
+  
+}
+#skillBox:nth-child(odd){
+  @apply delay-150;
+  
+}
+#skillBox{
+ background-color: #eeeeeebd;
+ backdrop-filter: blur(9px);
+}
+
+@keyframes blink {
+  0%, 25%,50%,100% {
+      opacity: 1;
+  }
+  40%,80% {
+      opacity: 0;
+  }
 }

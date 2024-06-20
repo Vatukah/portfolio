@@ -51,7 +51,7 @@ export default function Main() {
     const x = Math.round(circle.getBoundingClientRect().left);
 
     setPoint(x, y);
-    console.log(x, y);
+   
   };
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function Main() {
   }, [element, circle]);
   return (
     <main
-      className="w-full h-screen overflow-y-scroll overflow-x-hidden dosis-400"
+      className="w-full h-screen overflow-y-scroll overflow-x-hidden dosis-400 scroll-smooth"
       onMouseMove={(e) => moveSpot(e)}
       onMouseLeave={spotIdeal}
       onMouseEnter={(e) => removeClass(e)}

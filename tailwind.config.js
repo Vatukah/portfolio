@@ -2,7 +2,7 @@
 export default {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    
     colors:{
       black:{
         1:"#222831",
@@ -13,7 +13,8 @@ export default {
         1:"#EEEEEE",
         2:"#F5F7F8",
        }
-      }
+      },
+      extend: {}
   },
   plugins: [],
 }
