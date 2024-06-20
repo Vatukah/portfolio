@@ -37,7 +37,10 @@ export default function Skill() {
      const observer=new IntersectionObserver(([entry])=> {
       
         if(entry.isIntersecting){
-            api.start({from:{opacity:0},to:{
+            api.start({from:{
+              opacity:0,
+              
+            },to:{
                 opacity:1
             }})
             textApi.start({

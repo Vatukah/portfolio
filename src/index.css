@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   @apply bg-grey-2 overflow-x-hidden;
   font-family: "Dosis", sans-serif;
@@ -44,11 +45,12 @@ body{
   position: absolute;
   width: 10px;
   height: 10px;
-  z-index: -1;
+  z-index: 9999;
   opacity: 0.5;
   @apply bg-teal rounded-full;
   background-blend-mode:multiply;
   visibility: hidden;
+  pointer-events: none;
 }
 
 .smooth{
@@ -71,12 +73,41 @@ body{
 .addInvert:hover > img{
  filter: invert(100%);
 }
-#skillBox:nth-child(even){
+#skillBox:nth-child(1){
   @apply delay-75;
   
 }
-#skillBox:nth-child(odd){
-  @apply delay-150;
+#skillBox:nth-child(1){
+  @apply delay-[75ms];
+  
+}#skillBox:nth-child(2){
+  @apply delay-[100ms];
+  
+}#skillBox:nth-child(3){
+  @apply delay-[125ms];
+  
+}#skillBox:nth-child(4){
+  @apply delay-[150ms];
+  
+}#skillBox:nth-child(5){
+  @apply delay-[175ms];
+  
+}#skillBox:nth-child(6){
+  @apply delay-[200ms];
+  
+}#skillBox:nth-child(7){
+  @apply delay-[225ms];
+  
+}#skillBox:nth-child(8){
+  @apply delay-[250ms];
+  
+}#skillBox:nth-child(9){
+  @apply delay-[275ms];
+  
+}
+
+#skillBox:nth-child(10){
+  @apply delay-[300ms];
   
 }
 #skillBox{
@@ -84,11 +115,6 @@ body{
  backdrop-filter: blur(9px);
 }
 
-@keyframes blink {
-  0%, 25%,50%,100% {
-      opacity: 1;
-  }
-  40%,80% {
-      opacity: 0;
-  }
+#projects > div:nth-child(even){
+  flex-direction: row-reverse;
 }
