@@ -24,8 +24,8 @@ export default function Skill() {
   const element = languauges.map((value, index) => (
     <animated.div
       key={index}
-      id="skillBox"
-      className={` w-[150px] flex flex-col justify-evenly items-center bg-grey-2 transition-opacity ease-in-out duration-500 `}
+      
+      className={` w-[150px] flex flex-col justify-evenly items-center  transition-opacity ease-in-out duration-500 skillBox `}
       style={{ ...spring }}
     >
       <i className={`devicon-${value}-plain colored text-7xl   `}></i>
@@ -82,7 +82,7 @@ export default function Skill() {
     >
       <div
         id="skillGrid"
-        className=" grid grid-cols-5 grid-rows-2  gap-[2px] w-fit h-[300px]  "
+        className=" grid grid-cols-5 grid-rows-2  gap-2 w-fit h-[300px]  "
       >
         {element}
       </div>

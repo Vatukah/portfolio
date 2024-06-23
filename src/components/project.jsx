@@ -4,7 +4,7 @@ export default function Project(){
 
   const element=pr.map((index)=><ProjectCompo key={index}/>)
     return(
-        <div id="projects" className="h-fit py-8  ">
+        <div id="projects" className="h-fit py-[14rem]  ">
 {element}
         </div>
     )
